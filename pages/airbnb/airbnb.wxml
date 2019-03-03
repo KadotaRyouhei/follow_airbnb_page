@@ -21,7 +21,7 @@
     <text class='txt_history_title'>您最近浏览过的房源</text>
     <view class='v_history_rooms_container'>
       <scroll-view class='sv_history_room' scroll-x="true">
-        <view class='v_container'>
+        <view class='v_history_scroll_container'>
           <view class="v_history_parent" wx:for="{{historyRoomData}}" wx:key="{{historyRoom.id}}" wx:for-item="historyRoom">
             <view class="v_history_item">
               <image class='img_history' mode="aspectFill" src='../../images/img_airbnb_history.jpg'></image>
@@ -37,10 +37,29 @@
   </view>
 
   <view class='v_recommend'>
-    <text class='txt_recommend_title'>春日出行灵感集</text>
+    <text class='txt_recommend_title'>日本赏樱灵感集</text>
     <view class='v_recommend_container'>
+      <scroll-view class='sv_recommend' scroll-x="true">
+        <view class='v_recommend_scroll_container'>
+          <view class="v_recommend_parent" wx:for="{{recommendList}}" wx:key="{{recommendData.id}}" wx:for-item="recommendData">
+            <view class="v_recommend_item">
+              <image class='img_recommend' mode="aspectFill" src='../../images/recommend.jpg'></image>
+              <text class='txt_recommend_tips'>{{recommendData.tips}}</text>
+              <text class='txt_recommend_title'>{{recommendData.title}}</text>
+              <text class='txt_recommend_detail'>{{recommendData.detail}}</text>
+            
+            </view>
+          </view>
+        </view>
+      </scroll-view>
 
     </view>
+  </view>
+
+  <view class='v_contact'>
+    <text>联系我们</text>
+    <text>联系方式</text>
+
   </view>
 
 </scroll-view>
