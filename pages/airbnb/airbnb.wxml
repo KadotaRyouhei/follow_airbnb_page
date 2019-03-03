@@ -1,0 +1,46 @@
+<scroll-view class='page_content'>
+  <view class='page_top'>
+    <image class='page_top_image' src='../../images/sakura1.jpeg'></image>
+    <view class='v_top'>
+      <image class='img_top' src='../../images/icon_airbnb.png'></image>
+      <view class='v_top_text'>
+        <text class='txt_top1'>领取赏樱礼金券</text>
+        <text class='txt_top2'>趁花开 邂逅日本</text>
+      </view>
+      <button class='btn_top'>立即领取</button>
+    </view>
+  </view>
+
+  <view class='v_look_for_room'>
+    <text class='txt_search'>输入目的地、城市或景点</text>
+    <text class='txt_date'>入住日期</text>
+    <button class='btn_search_room'>查找房源</button>
+  </view>
+
+  <view class='v_history'>
+    <text class='txt_history_title'>您最近浏览过的房源</text>
+    <view class='v_history_rooms_container'>
+      <scroll-view class='sv_history_room' scroll-x="true">
+        <view class='v_container'>
+          <view class="v_history_parent" wx:for="{{historyRoomData}}" 
+          wx:key="{{historyRoom.id}}" wx:for-item="historyRoom">
+            <view class="v_history_item">
+              <text class='txt_history_des'>{{historyRoom.des}}</text>
+              <text class='txt_history_name'>{{historyRoom.name}}</text>
+              <text class='txt_history_price'>{{historyRoom.price}}</text>
+              <text class='txt_history_comment'>{{historyRoom.comment}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class='v_recommend'>
+    <text class='txt_recommend_title'>春日出行灵感集</text>
+    <view class='v_recommend_container'>
+
+    </view>
+  </view>
+
+</scroll-view>
