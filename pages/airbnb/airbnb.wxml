@@ -22,9 +22,9 @@
     <view class='v_history_rooms_container'>
       <scroll-view class='sv_history_room' scroll-x="true">
         <view class='v_container'>
-          <view class="v_history_parent" wx:for="{{historyRoomData}}" 
-          wx:key="{{historyRoom.id}}" wx:for-item="historyRoom">
+          <view class="v_history_parent" wx:for="{{historyRoomData}}" wx:key="{{historyRoom.id}}" wx:for-item="historyRoom">
             <view class="v_history_item">
+              <image class='img_history' mode="aspectFill" src='../../images/img_airbnb_history.jpg'></image>
               <text class='txt_history_des'>{{historyRoom.des}}</text>
               <text class='txt_history_name'>{{historyRoom.name}}</text>
               <text class='txt_history_price'>{{historyRoom.price}}</text>

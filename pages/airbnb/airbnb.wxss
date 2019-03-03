@@ -76,7 +76,6 @@
 }
 
 .v_history_rooms_container {
-  background-color: yellow;
   height: fit-content;
 }
 
@@ -96,31 +95,35 @@
 .v_history_item {
   display: flex;
   flex-direction: column;
-  background-color: peru;
-  margin: 30rpx;
-  width: 500rpx;
+  margin-right: 20rpx;
+  width: 300rpx;
+}
+
+.img_history{
+  width: 300rpx;
+  height: 220rpx;
 }
 
 .txt_history_des {
-  
+  font-size: 26rpx;
 }
 
 .txt_history_name {
+  font-size: 28rpx;
+  font-weight: bolder;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  text-overflow: -o-ellipsis-lastline;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: pre-line;
-
+  white-space: normal;
 }
 
 .txt_history_price {
-  
+  font-size: 28rpx;
 }
 
 .txt_history_comment {
-  
+  font-size: 26rpx;
 }
 
